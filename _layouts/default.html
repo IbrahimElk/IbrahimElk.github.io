@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-  
-  <!-- font-smoothing is only applied on dark themes -->
   <body class="font-smoothing">
-
     {% include header.html %}
-
-    <div>
-      {{ content }}
+    <div class="wrapper">
+      {% if page.layout == "post" %}
+      <aside class="toc-fixed">
+        <nav id="toc"></nav>
+      </aside> 
+      {% endif %}
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
-
-    {% include footer.html %}
-
+    <!-- BEGIN TOC -->
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js">
+    </script>
+    <style>
+      .is-active-link::before {
+        background-color: #000000;
+      }
+    </style>
+    <script>
+      var tocbotConfig = {
+        tocSelector: '#toc',
+        contentSelector: 'article',
+        headingSelector: 'h2,h3',
+        smoothScroll: true,
+        hasInnerContainers: true
+      };
+      tocbot.init(tocbotConfig);
+    </script>
+    <!-- END TOC -->
   </body>
-
 </html>

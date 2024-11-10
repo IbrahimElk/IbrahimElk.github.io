@@ -1,45 +1,77 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-A simple and elegant theme for Jekyll and GitHub Pages.
+## Personal Information
 
-### Features:
-* Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
-* Designed for blogs and sites heavy on written content, with bold typography styles, homepage summaries, and previous/next snippets.
-* Supports a wide range of HTML elements and markdown.
-* Flexible styles that can be reused for customization without adding additional CSS.
-* Dynamically generated navigation links. See docs below for adding pages with specific post category for-loops.
+**Address:** Kortrijk, Belgium  
+**Email:** <a href="mailto:&#105;&#98;&#114;&#97;&#104;&#105;&#109;&#95;&#101;&#108;&#107;&#97;&#100;&#100;&#111;&#117;&#114;&#105;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">Ibrahim El Kaddouri</a>
 
-## Themes
-This theme comes in two color variations. The default is set to the `light` theme. To change the theme color, add `theme_color:` to your `config.yml` file with the color you wish to use. Example: `theme_color: dark`.
+<a href="https://github.com/IbrahimElk">
+  <img src="/assets/social/github.png" alt="GitHub" width="32" height="32">
+</a>
+<a href="https://linkedin.com/in/ibrahimelk/">
+  <img src="/assets/social/linkedin.png" alt="Linkedin" width="32" height="32">
+</a>
 
-<!-- | Config setting | Thumbnail |
-| --- | --- |
-| `theme_color: black` | <img width="330" alt="black" src="url"> |
-| `theme_color: red` | <img width="330" alt="red" src="url"> | -->
+## Employment History
 
+### Student Software Engineer - KRR group at KU Leuven
 
-## Installation
+- The development of [IDP-Z3](https://www.idp-z3.be/) reasoning application for the
+  Knowledge Representation and Reasoning group
+- Worked mainly on the Interactive Consultant and
+  [Web IDE](https://interactive-consultant.idp-z3.be/)
+  part of the application, see the
+  [changelog](https://gitlab.com/krr/IDP-Z3/-/blob/9a3362df5474cde981d2fde574a738b4019fa4b4/CHANGELOG.md#0112---18-10-2024)
 
-Add this line to your Jekyll site's Gemfile:
+### Research Intern - Technische Universität Graz
 
-```ruby
-gem "jekyll-athena"
-```
+- The internship revolves around designing [empathetic agents](projects/2024/09/05/empathicAgents.html)
+  as conversation partners for people with autism spectrum disorder.
 
-And add this line to your Jekyll site `config.yml`:
+### Observatory Intern - Royal Observatory of Belgium
 
-```yaml
-theme: jekyll-athena
-```
+- Attended [lectures](activities/2024/02/05/observatory.html) at the [observatory](https://www.astro.oma.be/en/)
+  on topics such as:
+  reference systems and planetology, solar physics and space weather,
+  astronomy and astrophysics and seismology and gravimetry.
 
-And then execute:
+### Student Software Engineer - Diggieteam Brussel
 
-    $ bundle
+- Linked data and semantic web
+- Collaborated with the Diggieteam to implement Sparql queries
 
-Or install it yourself as:
+### Student Firmware Engineer - Crestron Mechelen
 
-    $ gem install jekyll-athena
+- It primarily revolved around controlling and updating
+  the firmware of Crestron devices.
+
+## Open Source Contributions
+
+### MyoFInDer - Myoblast Fusion Index Determination Software
+
+- Contributed to [MyoFInDer](https://github.com/TissueEngineeringLab),
+  see [this](projects/2021/11/22/cellenTellen.html)
+  interesting piece of work
+- Played with the a forked
+  [MyoFInDer](https://github.com/IbrahimElk/MyoFInDer)
+- Explored the Tauri framework
+- Seperated the GUI from the Python backend
+- Tried to reduce program's storage footprint on the client side
+
+## Skills
+
+- **Preferred Programming Languages:** Python, C++/C, TypeScript
+- **Prefered Env:**
+  Git, Vim, Tmux, Zsh, Kitty, Hyperland, Arch, Docker
+
+  ![languages](/assets/social/languages.svg)
+
+## Education
+
+- **Master of Computer Science:** Ku Leuven Universiteit, 2025
+- **Bachelor of Computer Science:** Ku Leuven Universiteit, 2023
+- **Languages:** English (fluent), Dutch (fluent), French (mediocre)

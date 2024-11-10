@@ -3,15 +3,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>
+    {% if page.title %}{{ page.title | escape }}
+    {% else %}{{ site.title | escape }}{% endif %}
+  </title>
+  <meta name="description" content="{% if page.excerpt %}
+  {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+  {% else %}{{ site.description }}{% endif %}">
 
   {% assign user_url = site.url | append: site.baseurl %}
   {% assign full_base_url = user_url | default: site.github.url %}
   <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: full_base_url }}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="
+  {{ page.url | replace:'index.html','' | 
+  prepend: site.baseurl | prepend: site.url }}">
 
+  <link rel="alternate" 
+        type="application/rss+xml" 
+        title="{{ site.title }}" 
+        href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <style>
+    .toc-fixed {
+      position: fixed;
+      top: 100px; /* Adjust the top position as needed with "px" units */
+      left: 50px ; /* Adjust the left position as needed with "px" units and use !important if necessary */
+      width: 250px; /* Adjust the width as needed */
+      background-color:transparent; /* Add a background color */
+    }
+    #toc > .toc-list {
+        position: relative;
+        /*to add :  text niet onderstrepen. */
+        text-decoration: none; /* Remove underlines from TOC links */
+
+    }
+    #toc a {
+      text-decoration: none; /* Remove text underlines */
+      border-bottom: none !important; /* Remove the border-bottom property */
+    }
+    .toc-list {
+        overflow: hidden;
+        list-style: none;
+    }
+    
+    @media screen and (max-width: 1400px) {
+      .toc-fixed {
+        visibility: hidden;
+        display: none;
+      }
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.10.0/tocbot.css" />
 </head>

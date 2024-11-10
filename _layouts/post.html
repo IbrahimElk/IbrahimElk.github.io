@@ -2,6 +2,9 @@
 layout: default
 ---
 
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 <article class="container mx-auto px-2" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="mt-4 mb-2 clearfix header-text">
     <h1 class="h0 inline-block py-2 mt-4 header-title">{{ page.title }}</h1>
@@ -18,5 +21,5 @@ layout: default
 </article>
 
 <div class="container mx-auto px-2 py-2 clearfix">
-  {% include previous-next.html %}
+  {% include previous-next_has-categories.html %}
 </div>
