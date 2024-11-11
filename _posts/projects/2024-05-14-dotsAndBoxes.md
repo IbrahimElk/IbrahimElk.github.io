@@ -732,7 +732,7 @@ More specifics about the exact layers and architecture
 will be provided the future (sorry).
 In the meantime, feel free to explore and play the game
 developed from Chapter 5 at this
-<a href="">link</a>.
+<a href="https://github.com/IbrahimElk/ReinforcedDots">link</a>.
 
 ### 6.3 representation of dots-and-boxes in GNN
 

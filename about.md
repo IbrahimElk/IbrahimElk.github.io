@@ -15,6 +15,11 @@ permalink: /about
 <a href="https://linkedin.com/in/ibrahimelk/">
   <img src="/assets/social/linkedin.png" alt="Linkedin" width="32" height="32">
 </a>
+<a href="https://shattereddisk.github.io/rickroll/rickroll.mp4">
+  <img src="/assets/social/noot.jpg" alt="noot" width="32" height="32">
+</a>
+
+<br>
 
 ## Employment History
 
@@ -49,6 +54,8 @@ permalink: /about
 - It primarily revolved around controlling and updating
   the firmware of Crestron devices.
 
+<br>
+
 ## Open Source Contributions
 
 ### MyoFInDer - Myoblast Fusion Index Determination Software
@@ -62,13 +69,17 @@ permalink: /about
 - Seperated the GUI from the Python backend
 - Tried to reduce program's storage footprint on the client side
 
+<br>
+
 ## Skills
 
 - **Preferred Programming Languages:** Python, C++/C, TypeScript
 - **Prefered Env:**
-  Git, Vim, Tmux, Zsh, Kitty, Hyperland, Arch, Docker
+  Git, Vim, Tmux, Zsh, Kitty, Hyperland, <a href="https://github.com/IbrahimElk/dotfiles/">Arch</a>, Docker
 
   ![languages](/assets/social/languages.svg)
+
+<br>
 
 ## Education
 
