@@ -1,11 +1,36 @@
 ---
 layout: default
 ---
-<article class="container mx-auto px-2">
 
+<style>
+.hidden {
+  display: none !important;
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const randomValue = Math.random() < 0.1 ? 0 : 1; // Generate a random 0 or 1
+    const easterEgg = document.getElementById("easter-egg");
+    const standardContent = document.getElementById("standard-content");
+
+    if (randomValue === 0) {
+      easterEgg.classList.remove("hidden");
+      standardContent.classList.add("hidden");
+    } else {
+      standardContent.classList.remove("hidden");
+      easterEgg.classList.add("hidden");
+    }
+  });
+</script>
+
+<div id="easter-egg" class="hidden">
+  {% include easter_egg_boo.html %}
+</div>
+<article id="standard-content" class="hidden container mx-auto px-2">
   {% include page_heading.html %}
-
   <div class="prose mb-4 py-4">
     {{ content }}
   </div>
 </article>
+

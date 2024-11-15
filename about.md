@@ -86,3 +86,35 @@ permalink: /about
 - **Master of Computer Science:** Ku Leuven Universiteit, 2025
 - **Bachelor of Computer Science:** Ku Leuven Universiteit, 2023
 - **Languages:** English (fluent), Dutch (fluent), French (mediocre)
+
+<div id="shape">
+  <style>
+    .hidden {
+    }
+    #output2 {
+      background: #fff;
+      overflow-x: overflow;
+      transform: translateX(-20%);
+      overflow-y: overflow;
+      height: 100vh;
+    }
+    #output2 pre {
+      border-left: none;
+      overflow: visible;
+    }
+  </style>
+  <div id="output2">
+    <!-- ASCII art will be inserted here -->
+  </div>
+  <script type="module">
+    import { fileNames, loadFileConcurrently, play } from '/assets/ts/easter_egg.js';
+    async function main() {
+      const fileName = fileNames[1];
+      const content = await loadFileConcurrently(fileName);
+      if (content != undefined) {
+        await play(content, "output2");
+      }
+    }
+    main();
+  </script>
+</div>

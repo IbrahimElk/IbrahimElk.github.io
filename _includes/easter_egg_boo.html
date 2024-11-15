@@ -1,0 +1,34 @@
+<div id="easter-egg">
+
+  <style>
+    #output {
+      background: #fff;
+      overflow-x: visible;
+      overflow-y: hidden;
+      height: 100vh;
+    }
+    #output pre {
+      overflow: visible;
+    }
+  </style>
+
+  <div id="output">
+    <!-- ASCII art will be inserted here -->
+  </div>
+
+  <script type="module">
+    import { fileNames, loadFileConcurrently, play } from '/assets/ts/easter_egg.js';
+
+    async function main() {
+      const fileName = fileNames[0];
+      const content = await loadFileConcurrently(fileName);
+
+      if (content != undefined) {
+        await play(content, "output");
+      }
+    }
+
+    main();
+  </script>
+</div>
+
