@@ -46,8 +46,8 @@ permalink: /about
 
 ### Student Software Engineer - Diggieteam Brussel
 
-- Linked data and semantic web
-- Collaborated with the Diggieteam to implement Sparql queries
+- [Linked data](https://rubenverborgh.github.io/WebFundamentals/semantic-web/) and semantic web
+- Implemented Sparql queries for an RDF graph database
 
 ### Student Firmware Engineer - Crestron Mechelen
 
@@ -63,7 +63,7 @@ permalink: /about
 - Contributed to [MyoFInDer](https://github.com/TissueEngineeringLab),
   see [this](projects/2021/11/22/cellenTellen.html)
   interesting piece of work
-- Played with the a forked
+- Played with a forked
   [MyoFInDer](https://github.com/IbrahimElk/MyoFInDer)
 - Explored the Tauri framework
 - Seperated the GUI from the Python backend
