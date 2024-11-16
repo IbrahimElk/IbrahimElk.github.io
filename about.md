@@ -15,7 +15,7 @@ permalink: /about
 <a href="https://linkedin.com/in/ibrahimelk/">
   <img src="/assets/social/linkedin.png" alt="Linkedin" width="32" height="32">
 </a>
-<a href="https://shattereddisk.github.io/rickroll/rickroll.mp4">
+<a href="https://bit.ly/3BlS71b">
   <img src="/assets/social/noot.jpg" alt="noot" width="32" height="32">
 </a>
 
