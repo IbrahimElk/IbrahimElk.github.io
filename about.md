@@ -10,13 +10,13 @@ permalink: /about
 **Email:** <a href="mailto:&#105;&#98;&#114;&#97;&#104;&#105;&#109;&#95;&#101;&#108;&#107;&#97;&#100;&#100;&#111;&#117;&#114;&#105;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">Ibrahim El Kaddouri</a>
 
 <a href="https://github.com/IbrahimElk">
-  <img src="/assets/social/github.png" alt="GitHub" width="32" height="32">
+  <img src="/assets/social/github.png" alt="GitHub" width="48" height="48">
 </a>
 <a href="https://linkedin.com/in/ibrahimelk/">
-  <img src="/assets/social/linkedin.png" alt="Linkedin" width="32" height="32">
+  <img src="/assets/social/linkedin.png" alt="Linkedin" width="48" height="48">
 </a>
-<a href="https://bit.ly/3BlS71b">
-  <img src="/assets/social/noot.jpg" alt="noot" width="32" height="32">
+<a href="https://bit.ly/4fPyhMM">
+  <img src="/assets/social/noot.jpg" alt="noot" width="48" height="48">
 </a>
 
 <br>
@@ -47,7 +47,7 @@ permalink: /about
 ### Student Software Engineer - Diggieteam Brussel
 
 - [Linked data](https://rubenverborgh.github.io/WebFundamentals/semantic-web/) and semantic web
-- Implemented Sparql queries for an RDF graph database
+- Implemented SPARQL queries for an RDF graph database
 
 ### Student Firmware Engineer - Crestron Mechelen
 
