@@ -23,6 +23,13 @@ Article in <a href="/assets/papers/2024-09-05/paper.pdf" download="TU_Graz_Paper
 **Author:** Ibrahim El Kaddouri  
 **Repository:** [Github](https://github.com/ChristianPoglitsch/EmpathicAgents)
 
+**Demo:** <span class="tooltip">
+<a href="http://ai-agents.gamelabgraz.at">
+<img src="/assets/images/2024-09-05/ai_agent.jpg"
+      style="width:10.0%" >
+</a>
+</span>
+
 **Game:** <span class="tooltip">
 <a href="https://etap.gamelabgraz.at/">
 <img src="/assets/images/2024-09-05/scenario.png" 
