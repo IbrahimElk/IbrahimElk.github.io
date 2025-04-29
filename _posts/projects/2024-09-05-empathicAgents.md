@@ -32,8 +32,8 @@ Article in <a href="/assets/papers/2024-09-05/paper.pdf" download="TU_Graz_Paper
 
 **Game:** <span class="tooltip">
 <a href="https://etap.gamelabgraz.at/">
-<img src="/assets/images/2024-09-05/scenario.png" 
-	     style="width:10.0%" >
+<img src="/assets/images/2024-09-05/scenario.png"
+      style="width:10.0%" >
 </a>
 <span class="tooltip-text">You may have to wait quite a bit to load</span>
 </span>
@@ -275,21 +275,21 @@ be added to the the database <a href="#cite:7">[7]</a>.
 
 ```
     "node_<int>": {
-    	"node_count": <int>,
-    	"type_count": <int>,
-    	"type": <"event"| "chat" | "thought">,
-    	"depth": int,
-    	"created": string,
-    	"expiration": null | string,
+     "node_count": <int>,
+     "type_count": <int>,
+     "type": <"event"| "chat" | "thought">,
+     "depth": int,
+     "created": string,
+     "expiration": null | string,
      "subject":
         <"{world}:{sector}:{arena}:{object}">,
-    	"predicate": string
-    	"object": string
-    	"description": string
-    	"embedding_key": string,
-    	"poignancy": 1,
-    	"keywords": list<string>,
-    	"filling": list<string>
+     "predicate": string
+     "object": string
+     "description": string
+     "embedding_key": string,
+     "poignancy": 1,
+     "keywords": list<string>,
+     "filling": list<string>
     }
 ```
 
@@ -299,21 +299,21 @@ bed in the main room is in use.
 
 ```
     "node_9": {
-    	"node_count": 9,
-    	"type_count": 6,
-    	"type": "event",
-    	"depth": 0,
-    	"created": "2024-08-13 11:11:20",
-    	"expiration": null,
-    	"subject":
+     "node_count": 9,
+     "type_count": 6,
+     "type": "event",
+     "depth": 0,
+     "created": "2024-08-13 11:11:20",
+     "expiration": null,
+     "subject":
         "Graz:apartment:main_room:bed",
-    	"predicate": "be",
-    	"object": "used",
-    	"description": "bed is being used",
-    	"embedding_key": "bed is being used",
-    	"poignancy": 1,
-    	"keywords": ["used", "bed"],
-    	"filling": []
+     "predicate": "be",
+     "object": "used",
+     "description": "bed is being used",
+     "embedding_key": "bed is being used",
+     "poignancy": 1,
+     "keywords": ["used", "bed"],
+     "filling": []
 ```
 
 In order to retrieve the correct memory objects, the following three
@@ -632,8 +632,6 @@ respect the formatting rules. This could be due to the fact that the 7B
 model is not expressive enough or due to the fact that the prompt is too
 complex and should be split up into multiple smaller prompts in order
 for the local model to understand the query fully.
-
-[^2]: By the time of writing this paper, v3 replaced v2.
 
 ## VI. Conclusion
 
