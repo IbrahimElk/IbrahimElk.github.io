@@ -100,3 +100,33 @@ a:hover {
     border-radius: 4px;
     font-size: 0.8em;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacer-2;
+  max-width: 100%;
+  margin: $spacer-3 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacer-2;
+  max-width: 100%;
+  margin: $spacer-3 auto;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
