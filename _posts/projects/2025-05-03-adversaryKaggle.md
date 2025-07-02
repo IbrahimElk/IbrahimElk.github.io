@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Computer Vision: Bamboozling Neural Networks"
-date: 2025-06-01
+date: 2025-05-01
 summary: "When your Deep NN thinks a panda is a gibbon because someone added 3 pixels of chaos"
 keywords:
   ["Kaggle", "Computer Vision", "Adverserial Attacks", "CW", "BIM", "FSGM", "PGD", "GAP"]

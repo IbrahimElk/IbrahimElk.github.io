@@ -8,7 +8,13 @@ permalink: /about
 
 **Address:** Kortrijk, Belgium  
 **Email:** <a href="mailto:&#105;&#98;&#114;&#97;&#104;&#105;&#109;&#95;&#101;&#108;&#107;&#97;&#100;&#100;&#111;&#117;&#114;&#105;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">Ibrahim El Kaddouri</a>
+<div style="font-size: 12px; 
+            font-family: 'Courier New',
+            monospace; color: #555;">
+  PGP Key fingerprint: F514 937A 8AE1 06F7 9CE9 167B 2A07 C1AC E0DC 9208
+</div>
 
+<br>
 <a href="https://github.com/IbrahimElk">
   <img src="/assets/social/github.png" alt="GitHub" width="48" height="48">
 </a>
@@ -19,7 +25,6 @@ permalink: /about
   <img src="/assets/social/noot.jpg" alt="noot" width="48" height="48">
 </a>
 
-<br>
 
 ## Employment History
 
