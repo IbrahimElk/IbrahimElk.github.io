@@ -130,3 +130,65 @@ a:hover {
   display: block;
 }
 
+.note {
+  border-left: 4px solid #007acc;
+  background-color: #e7f3ff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #004080;
+}
+
+.note {
+  border-left: 4px solid #007acc;
+  background-color: #e7f3ff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #004080;
+}
+
+.warning {
+  border-left: 4px solid #ff9800;
+  background-color: #fff8e1;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #8a6d3b;
+}
+
+.danger {
+  border-left: 4px solid #f44336;
+  background-color: #fdecea;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #a94442;
+}
+
+.success {
+  border-left: 4px solid #4caf50;
+  background-color: #e8f5e9;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #2e7d32;
+}
+
+.info {
+  border-left: 4px solid #2196f3;
+  background-color: #e3f2fd;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #0c5460;
+}
+
+.tip {
+  border-left: 4px solid #3ddc84;
+  background-color: #e6ffed;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #1e4620;
+}
