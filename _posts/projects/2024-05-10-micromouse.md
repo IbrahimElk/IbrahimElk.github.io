@@ -7,7 +7,7 @@ keywords: ["Python", "pybullet", "", "machinevision-toolbox-python", "RL"]
 categories: projects
 ---
 
-**Author:** Ibrahim El Kaddouri
+**Author:** Ibrahim El Kaddouri, Quentin St-Pierre, Enrico Tonon, Enrique Dorado Gil
 
 ## Introduction
 
