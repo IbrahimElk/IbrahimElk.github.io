@@ -1,0 +1,1480 @@
+[2025-07-29 11:22:25,274][__main__][INFO] - 
+experiment_index: 1
+output_dir: assets
+env_kwargs:
+  add_chars: true
+  render_mode: ansi
+  random_start: false
+  goal_reward: 0
+  average_return: false
+experiments:
+  experiment0:
+    episodes: 50
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 5
+    step_window: 1
+    step_per_eps_window: 1
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment1:
+    episodes: 100
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 10
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment2:
+    episodes: 200
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 20
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment3:
+    episodes: 300
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 30
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment4:
+    episodes: 400
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 40
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment5:
+    episodes: 500
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 50
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment6:
+    episodes: 500
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 50
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: constant
+          start: 0.01
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: constant
+          start: 0.01
+        gamma: 1.0
+        eval_target: true
+
+[2025-07-29 11:22:25,276][src.callbacks.trackers][INFO] - Applied QValueTracker to qlearning
+[2025-07-29 11:22:25,276][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:22:25,285][src.callbacks.environment][INFO] - Setup training environment for cliff
+[2025-07-29 11:22:25,894][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:25,973][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,087][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,149][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,240][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,306][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,419][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,455][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,587][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,608][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,719][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,747][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,826][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,867][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:26,943][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,014][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,064][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,120][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,200][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,234][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,270][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,378][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,406][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,468][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,502][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,543][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,610][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,670][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,699][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,758][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,814][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,846][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,870][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,914][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,968][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:27,993][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,036][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,099][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,126][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,160][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,208][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,241][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,311][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,331][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,366][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,396][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,440][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,472][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,515][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,547][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,583][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,625][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,670][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,707][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,754][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,776][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,808][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,842][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,869][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,898][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,932][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:28,968][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,013][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,035][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,073][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,096][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,139][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,164][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,201][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,234][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,260][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,284][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,304][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,349][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,375][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,410][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,445][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,465][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,486][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,528][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,562][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,587][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,615][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,646][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,664][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,703][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,732][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,776][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,806][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,839][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,873][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,901][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,923][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,946][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:29,975][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:30,008][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:30,037][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:30,060][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:30,097][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:22:30,097][src.callbacks.data][INFO] - Saved weights for qlearning
+[2025-07-29 11:22:30,100][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:22:30,126][src.callbacks.environment][INFO] - Setup evaluation environment for cliff
+[2025-07-29 11:22:49,507][matplotlib.image][WARNING] - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [0.0..255.0].
+[2025-07-29 11:22:49,900][src.callbacks.trackers][INFO] - Generated training visualizations for qlearning
+[2025-07-29 11:22:49,900][src.callbacks.visualisation][INFO] - Setup evaluation environment for plotting
+[2025-07-29 11:23:36,917][src.callbacks.visualisation][INFO] - Generated GIF for qlearning
+[2025-07-29 11:23:37,131][src.callbacks.visualisation][INFO] - Generated policy map for qlearning
+[2025-07-29 11:23:37,132][src.callbacks.data][INFO] - Saved csv data for qlearning
+[2025-07-29 11:23:37,136][src.callbacks.trackers][INFO] - Applied QValueTracker to sarsa
+[2025-07-29 11:23:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:23:37,197][src.callbacks.environment][INFO] - Setup training environment for cliff
+[2025-07-29 11:23:37,858][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,042][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,138][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,233][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,329][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,428][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,569][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,612][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,717][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,778][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,844][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,917][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:38,978][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,061][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,151][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,202][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,261][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,338][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,451][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,502][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,555][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,602][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,692][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,726][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,785][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,859][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,911][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:39,958][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,000][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,077][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,116][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,195][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,265][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,306][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,337][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,377][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,441][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,499][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,531][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,581][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,640][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,684][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,737][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,789][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,833][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,880][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,897][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,953][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:40,998][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,054][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,106][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,154][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,203][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,254][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,285][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,318][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,367][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,402][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,441][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,488][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,523][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,565][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,598][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,642][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,674][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,716][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,736][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,798][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,837][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,868][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,912][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,949][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:41,986][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,018][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,060][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,086][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,129][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,166][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,215][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,262][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,303][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,334][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,364][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,386][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,422][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,467][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,509][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,527][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,566][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,609][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,641][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,653][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,686][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,733][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,756][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,777][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,809][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,854][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,877][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:23:42,878][src.callbacks.data][INFO] - Saved weights for sarsa
+[2025-07-29 11:23:42,881][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:23:42,908][src.callbacks.environment][INFO] - Setup evaluation environment for cliff
+[2025-07-29 11:24:03,174][matplotlib.image][WARNING] - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [0.0..255.0].
+[2025-07-29 11:24:03,527][src.callbacks.trackers][INFO] - Generated training visualizations for sarsa
+[2025-07-29 11:24:03,527][src.callbacks.visualisation][INFO] - Setup evaluation environment for plotting
+[2025-07-29 11:24:03,538][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,547][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,555][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,563][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,573][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,581][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,589][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,598][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,608][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,617][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,627][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,635][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,645][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,658][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,672][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,686][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,696][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,705][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,714][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,723][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,731][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,741][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,749][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,759][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,767][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,777][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,785][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,794][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,804][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,822][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,831][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,841][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,850][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,859][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,868][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,878][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,887][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,896][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,906][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,915][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,924][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,933][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,943][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,951][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,960][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,969][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,979][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,989][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:03,998][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,007][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,017][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,026][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,035][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,045][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,054][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,063][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,073][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,082][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,092][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,100][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,110][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,119][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,131][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,141][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,150][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,160][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,169][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,178][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,187][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,197][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,206][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,215][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,225][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,234][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,244][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,253][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,262][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,272][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,281][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,290][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,299][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,308][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,317][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,327][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,335][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,345][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,354][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,366][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,379][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,388][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,398][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,409][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,417][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,428][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,438][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,449][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,458][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,468][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,479][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,490][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,500][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,511][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,520][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,530][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,540][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,550][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,561][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,571][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,582][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,591][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,601][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,612][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,622][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,632][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,642][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,652][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,663][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,673][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,684][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,694][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,705][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,715][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,726][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,736][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,747][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,758][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,768][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,780][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,792][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,803][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,825][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,834][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,845][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,854][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,864][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,875][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,884][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,894][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,903][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,913][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,923][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,933][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,943][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,952][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,963][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,973][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,982][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:04,994][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,002][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,014][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,025][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,034][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,043][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,052][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,062][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,070][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,079][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,088][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,096][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,106][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,114][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,125][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,134][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,144][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,154][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,163][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,173][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,182][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,192][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,201][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,210][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,219][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,229][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,238][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,247][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,257][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,266][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,276][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,284][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,295][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,304][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,313][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,323][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,332][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,341][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,350][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,360][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,369][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,379][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,388][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,397][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,406][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,416][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,425][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,434][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,443][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,452][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,462][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,471][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,481][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,490][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,499][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,509][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,518][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,528][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,537][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,547][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,556][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,566][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,575][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,584][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,594][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,603][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,613][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,623][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,632][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,641][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,650][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,661][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,669][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,679][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,688][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,698][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,707][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,716][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,726][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,735][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,745][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,754][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,764][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,774][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,783][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,792][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,801][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,829][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,838][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,847][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,857][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,866][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,876][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,885][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,895][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,904][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,913][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,922][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,931][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,940][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,950][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,959][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,968][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,979][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,988][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:05,998][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,008][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,018][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,028][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,037][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,046][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,056][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,066][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,075][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,084][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,095][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,103][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,113][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,123][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,132][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,141][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,150][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,160][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,169][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,179][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,188][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,198][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,209][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,218][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,227][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,237][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,247][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,257][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,266][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,275][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,284][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,295][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,304][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,314][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,323][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,332][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,342][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,351][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,362][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,370][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,380][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,390][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,399][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,408][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,417][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,427][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,436][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,446][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,455][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,464][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,474][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,483][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,493][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,502][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,511][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,521][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,530][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,540][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,550][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,559][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,568][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,579][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,588][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,597][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,608][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,617][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,626][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,635][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,645][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,654][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,663][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,673][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,682][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,693][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,702][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,712][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,721][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,731][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,741][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,749][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,759][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,767][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,778][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,786][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,796][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,805][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,814][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,824][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,833][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,842][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,851][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,862][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,871][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,881][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,891][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,900][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,910][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,919][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,930][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,938][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,948][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,958][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,967][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,976][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,985][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:06,994][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,004][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,014][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,025][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,035][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,045][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,054][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,064][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,075][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,084][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,095][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,104][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,114][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,124][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,133][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,143][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,152][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,162][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,171][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,181][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,191][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,200][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,210][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,219][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,229][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,238][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,248][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,258][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,267][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,277][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,286][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,296][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,305][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,315][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,325][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,334][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,344][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,354][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,364][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,374][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,383][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,393][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,402][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,412][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,421][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,431][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,442][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,451][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,461][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,470][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,480][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,490][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,499][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,509][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,518][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,528][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,537][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,547][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,556][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,566][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,575][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,585][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,595][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,603][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,613][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,622][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,632][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,642][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,650][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,661][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,669][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,679][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,688][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,697][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,707][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,717][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,728][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,738][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,748][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,758][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,767][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,778][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,787][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,797][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,805][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,815][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,825][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,834][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,843][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,852][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,863][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,871][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,881][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,891][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,900][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,909][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,918][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,928][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,937][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,947][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,957][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,967][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,976][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,985][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:07,995][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,004][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,015][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,026][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,036][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,046][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,054][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,065][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,075][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,085][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,094][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,104][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,114][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,123][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,133][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,144][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,153][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,164][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,173][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,183][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,193][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,202][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,213][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,222][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,232][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,242][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,251][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,262][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,271][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,281][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,291][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,301][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,311][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,320][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,331][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,340][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,349][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,361][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,370][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,380][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,389][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,399][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,409][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,419][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,428][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,438][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,448][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,458][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,468][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,477][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,487][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,497][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,506][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,516][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,526][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,535][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,545][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,554][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,565][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,574][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,583][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,594][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,603][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,614][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,623][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,633][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,643][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,652][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,662][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,671][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,681][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,691][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,701][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,712][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,721][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,731][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,742][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,751][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,762][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,771][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,781][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,791][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,801][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,820][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,830][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,839][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,849][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,859][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,868][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,878][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,887][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,898][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,908][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,917][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,927][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,936][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,947][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,956][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,966][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,976][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,985][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:08,997][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,005][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,015][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,027][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,035][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,046][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,054][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,065][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,073][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,083][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,092][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,101][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,110][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,119][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,130][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,138][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,148][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,156][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,165][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,175][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,183][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,193][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,202][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,212][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,221][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,230][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,239][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,249][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,257][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,267][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,278][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,286][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,297][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,306][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,316][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,326][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,335][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,345][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,354][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,364][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,372][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,382][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,390][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,400][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,409][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,418][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,428][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,437][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,446][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,455][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,465][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,474][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,483][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,493][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,502][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,511][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,520][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,531][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,539][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,549][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,558][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,568][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,577][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,586][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,596][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,605][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,614][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,623][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,633][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,643][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,652][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,661][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,670][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,680][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,688][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,698][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,706][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,716][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,725][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,735][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,744][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,753][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,763][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,772][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,782][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,790][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,800][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,829][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,838][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,848][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,856][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,867][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,876][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,886][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,895][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,904][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,914][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,923][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,932][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,943][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,952][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,963][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,972][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,982][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:09,992][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,001][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,011][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,021][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,031][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,039][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,050][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,058][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,068][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,077][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,086][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,097][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,105][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,115][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,124][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,134][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,144][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,153][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,163][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,172][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,182][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,191][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,201][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,210][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,220][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,230][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,239][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,249][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,258][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,268][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,279][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,288][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,299][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,308][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,317][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,327][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,336][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,347][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,356][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,366][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,374][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,384][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,394][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,403][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,414][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,423][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,433][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,442][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,452][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,462][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,471][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,480][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,489][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,499][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,508][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,518][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,528][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,536][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,546][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,555][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,565][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,574][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,584][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,594][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,603][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,614][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,623][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,633][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,642][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,651][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,661][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,670][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,680][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,689][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,699][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,707][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,717][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,727][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,736][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,745][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,754][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,764][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,773][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,783][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,792][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,801][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,830][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,839][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,848][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,857][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,867][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,877][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,888][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,898][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,907][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,918][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,929][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,939][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,949][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,958][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,968][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,979][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,989][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:10,999][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,008][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,020][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,032][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,041][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,051][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,062][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,071][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,081][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,091][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,101][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,111][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,120][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,131][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,140][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,150][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,158][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,167][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,176][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,185][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,194][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,203][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,212][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,220][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,231][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,239][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,249][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,257][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,266][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,274][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,283][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,292][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,301][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,311][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,321][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,330][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,339][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,349][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,358][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,368][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,377][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,386][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,395][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,404][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,414][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,423][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,433][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,442][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,452][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,461][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,470][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,479][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,488][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,497][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,506][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,516][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,524][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,534][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,543][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,552][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,562][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,571][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,581][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,590][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,600][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,608][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,618][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,627][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,636][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,646][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,655][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,665][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,674][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,683][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,692][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,702][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,712][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,721][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,730][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,739][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,749][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,758][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,768][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,777][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,786][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,795][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,804][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,814][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,823][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,833][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,842][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,852][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,862][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,871][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,880][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,889][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,899][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,908][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,918][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,927][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,936][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,946][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,955][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,965][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,974][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,984][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:11,993][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,003][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,013][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,024][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,034][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,042][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,052][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,062][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,071][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,080][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,089][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,099][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,108][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,117][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,126][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,136][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,145][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,154][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,164][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,173][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,183][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,192][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,201][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,211][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,220][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,231][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,240][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,250][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,258][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,268][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,276][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,286][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,295][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,305][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,315][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,324][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,334][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,343][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,353][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,364][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,373][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,382][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,391][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,401][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,410][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,419][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,429][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,438][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,448][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,457][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,467][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,476][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,485][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,495][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,504][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,514][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,523][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,534][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,542][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,552][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,562][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,571][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,580][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,589][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,599][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,608][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,617][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,626][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,636][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,646][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,655][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,664][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,673][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,683][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,692][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,702][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,711][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,720][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,730][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,739][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,749][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,758][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,767][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,776][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,786][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,795][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,804][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,822][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,832][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,841][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,851][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,860][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,869][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,879][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,888][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,897][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,906][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,917][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,926][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,935][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,945][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,955][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,966][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,976][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,985][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:12,994][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,004][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,014][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,024][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,034][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,043][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,052][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,062][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,072][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:24:13,082][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,775][src.callbacks.visualisation][INFO] - Generated GIF for sarsa
+[2025-07-29 11:25:17,806][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,807][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,807][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,807][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,808][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,808][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,808][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,809][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,809][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,809][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,809][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,810][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,811][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,811][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,811][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,811][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,812][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,812][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,812][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,813][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,814][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,814][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,815][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,815][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,816][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,816][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,817][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,817][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,818][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,818][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,819][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,820][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,820][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,820][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,821][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,821][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,821][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,822][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,822][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,822][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,823][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,823][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,823][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,824][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,824][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,824][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,825][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,825][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,825][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,826][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,826][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,826][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,827][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,827][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,827][src.algorithms.sarsa][INFO] - 0.008000000000000082
+[2025-07-29 11:25:17,983][src.callbacks.visualisation][INFO] - Generated policy map for sarsa
+[2025-07-29 11:25:17,984][src.callbacks.data][INFO] - Saved csv data for sarsa
+[2025-07-29 11:25:19,559][src.callbacks.visualisation][INFO] - Generated plots for cliff

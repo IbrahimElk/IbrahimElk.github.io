@@ -1,0 +1,1300 @@
+[2025-07-29 11:25:38,191][__main__][INFO] - 
+experiment_index: 5
+output_dir: assets
+env_kwargs:
+  add_chars: true
+  render_mode: ansi
+  random_start: false
+  goal_reward: 0
+  average_return: false
+experiments:
+  experiment0:
+    episodes: 50
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 5
+    step_window: 1
+    step_per_eps_window: 1
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment1:
+    episodes: 100
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 10
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment2:
+    episodes: 200
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 20
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment3:
+    episodes: 300
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 30
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment4:
+    episodes: 400
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 40
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment5:
+    episodes: 500
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 50
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: linear
+          start: 0.01
+          end: 0
+          decay_steps: 500
+        gamma: 1.0
+        eval_target: true
+  experiment6:
+    episodes: 500
+    envs:
+    - cliff
+    title: Linear Exploration Rate in {env}
+    return_window: 50
+    step_window: 10
+    step_per_eps_window: 10
+    q_window: 1
+    algorithms:
+      qlearning:
+        alpha: 0.1
+        epsilon:
+          type: constant
+          start: 0.01
+        gamma: 1.0
+      sarsa:
+        alpha: 0.1
+        epsilon:
+          type: constant
+          start: 0.01
+        gamma: 1.0
+        eval_target: true
+
+[2025-07-29 11:25:38,193][src.callbacks.trackers][INFO] - Applied QValueTracker to qlearning
+[2025-07-29 11:25:38,193][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:25:38,202][src.callbacks.environment][INFO] - Setup training environment for cliff
+[2025-07-29 11:25:38,838][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:38,896][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,008][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,089][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,166][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,251][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,467][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,590][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,637][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,699][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,768][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,828][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,878][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:39,941][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,010][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,057][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,126][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,193][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,247][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,294][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,353][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,423][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,466][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,517][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,558][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,614][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,660][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,746][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,793][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,837][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,879][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,950][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:40,989][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,045][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,093][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,125][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,170][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,224][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,260][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,290][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,334][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,393][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,426][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,464][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,512][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,556][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,577][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,616][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,657][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,681][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,729][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,768][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,821][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,844][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,882][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,913][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,959][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:41,987][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,014][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,047][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,093][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,119][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,164][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,197][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,240][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,270][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,292][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,322][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,363][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,399][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,431][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,465][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,490][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,518][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,551][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,582][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,622][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,641][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,683][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,706][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,721][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,757][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,790][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,849][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,866][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,892][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,921][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,951][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,976][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:42,997][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,022][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,041][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,080][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,107][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,134][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,159][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,180][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,214][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,262][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,297][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,319][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,340][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,369][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,391][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,410][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,441][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,461][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,489][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,505][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,539][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,566][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,590][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,610][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,645][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,665][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,681][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,711][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,737][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,757][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,786][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,808][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,831][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,850][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,876][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,902][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,917][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,945][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,973][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:43,988][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,004][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,031][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,053][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,079][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,108][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,130][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,153][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,170][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,185][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,212][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,226][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,245][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,289][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,311][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,331][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,356][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,373][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,404][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,426][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,447][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,468][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,507][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,526][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,538][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,556][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,575][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,592][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,608][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,627][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,652][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,672][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,697][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,714][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,746][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,761][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,782][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,794][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,811][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,832][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,849][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,872][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,895][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,911][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,926][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,953][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,968][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,987][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:44,997][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,024][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,043][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,062][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,086][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,103][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,119][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,136][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,153][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,175][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,189][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,212][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,235][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,255][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,271][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,289][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,308][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,322][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,334][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,355][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,376][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,393][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,408][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,417][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,445][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,460][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,475][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,506][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,521][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,536][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,553][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,573][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,590][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,606][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,623][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,635][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,658][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,671][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,687][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,703][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,719][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,739][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,753][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,766][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,790][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,809][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,826][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,842][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,859][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,872][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,885][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,905][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,919][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,935][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,961][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,975][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:45,989][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,007][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,021][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,036][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,049][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,058][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,069][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,093][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,117][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,134][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,149][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,164][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,175][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,188][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,208][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,231][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,242][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,259][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,268][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,284][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,300][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,319][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,336][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,349][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,365][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,376][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,397][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,413][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,433][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,444][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,456][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,470][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,493][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,507][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,524][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,535][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,553][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,567][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,578][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,588][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,606][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,627][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,638][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,653][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,665][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,682][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,697][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,716][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,731][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,742][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,756][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,772][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,795][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,813][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,824][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,836][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,848][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,870][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,881][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,893][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,906][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,921][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,932][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,951][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,965][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,980][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:46,993][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,004][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,024][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,035][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,050][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,062][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,072][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,086][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,106][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,115][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,132][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,144][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,155][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,170][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,181][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,199][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,216][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,227][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,244][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,254][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,268][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,278][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,289][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,302][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,317][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,331][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,345][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,358][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,375][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,392][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,402][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,412][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,425][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,436][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,451][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,460][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,481][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,495][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,512][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,525][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,536][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,546][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,556][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,578][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,587][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,600][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,610][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,622][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,637][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,653][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,662][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,673][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,689][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,698][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,713][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,729][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,740][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,754][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,769][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,780][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,791][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,809][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,820][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,830][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,845][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,857][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,869][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,879][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,890][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,900][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,912][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,923][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,941][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,955][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,965][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,978][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:47,996][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,006][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,019][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,029][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,041][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,053][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,062][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,072][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,088][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,097][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,111][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,125][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,135][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,150][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,160][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,171][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,183][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,194][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,204][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,224][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,234][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,244][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,258][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,267][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,277][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,289][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,302][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,321][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,330][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,341][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,351][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,360][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,376][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,386][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,396][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,407][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,417][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,427][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,439][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,449][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,459][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,469][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,478][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,489][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,505][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,514][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,526][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,537][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,546][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,558][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,568][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,578][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,588][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,597][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,611][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,620][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,629][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,640][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,649][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,664][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,674][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,683][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,693][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,703][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,712][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,725][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,735][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,745][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,754][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,764][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,774][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,784][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,794][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,803][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,814][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,824][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,839][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,848][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,857][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,867][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,877][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,886][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,895][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,905][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,914][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,925][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,934][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,944][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,955][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,964][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,974][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,984][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:48,994][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,004][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,013][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,023][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,034][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,044][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,054][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,063][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,073][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,083][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,093][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,103][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,112][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,121][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,130][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,140][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,149][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,159][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,168][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,178][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,188][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,197][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,207][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,216][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,226][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,235][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,244][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,254][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,263][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,273][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,282][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,297][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,307][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:25:49,308][src.callbacks.data][INFO] - Saved weights for qlearning
+[2025-07-29 11:25:49,311][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:25:49,339][src.callbacks.environment][INFO] - Setup evaluation environment for cliff
+[2025-07-29 11:26:07,456][matplotlib.image][WARNING] - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [0.0..255.0].
+[2025-07-29 11:26:07,762][src.callbacks.trackers][INFO] - Generated training visualizations for qlearning
+[2025-07-29 11:26:07,763][src.callbacks.visualisation][INFO] - Setup evaluation environment for plotting
+[2025-07-29 11:26:07,903][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:08,956][src.callbacks.visualisation][INFO] - Generated GIF for qlearning
+[2025-07-29 11:26:09,109][src.callbacks.visualisation][INFO] - Generated policy map for qlearning
+[2025-07-29 11:26:09,109][src.callbacks.data][INFO] - Saved csv data for qlearning
+[2025-07-29 11:26:09,112][src.callbacks.trackers][INFO] - Applied QValueTracker to sarsa
+[2025-07-29 11:26:09,113][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:26:09,123][src.callbacks.environment][INFO] - Setup training environment for cliff
+[2025-07-29 11:26:09,704][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:09,873][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:09,954][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,184][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,260][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,370][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,520][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,602][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,683][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,779][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,829][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:10,925][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,020][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,078][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,150][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,218][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,335][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,370][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,452][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,492][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,588][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,631][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,690][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,735][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,792][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,841][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,892][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:11,948][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,015][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,073][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,114][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,149][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,238][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,277][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,334][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,390][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,466][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,518][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,544][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,577][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,623][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,667][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,713][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,776][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,832][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,861][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,940][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:12,983][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,022][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,050][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,114][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,151][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,221][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,248][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,272][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,324][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,363][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,396][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,441][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,487][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,512][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,541][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,572][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,605][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,632][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,668][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,697][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,730][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,775][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,808][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,830][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,873][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,923][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:13,948][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,005][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,048][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,080][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,097][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,133][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,162][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,198][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,212][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,260][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,318][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,346][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,371][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,405][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,439][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,483][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,503][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,526][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,557][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,592][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,620][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,658][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,678][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,713][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,739][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,757][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,808][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,835][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,854][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,874][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,908][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,940][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,970][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:14,992][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,026][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,049][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,073][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,094][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,123][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,157][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,191][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,212][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,238][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,256][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,295][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,328][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,354][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,379][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,400][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,423][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,446][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,470][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,488][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,526][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,543][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,556][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,583][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,603][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,636][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,680][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,704][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,733][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,753][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,777][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,807][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,829][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,844][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,871][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,896][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,941][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:15,975][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,002][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,039][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,061][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,078][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,097][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,129][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,169][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,191][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,205][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,223][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,271][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,302][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,324][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,342][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,370][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,392][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,414][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,441][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,471][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,514][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,530][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,551][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,577][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,598][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,625][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,639][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,670][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,686][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,726][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,741][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,768][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,782][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,803][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,820][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,839][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,858][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,875][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,902][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,917][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,945][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,959][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,978][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:16,994][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,011][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,036][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,053][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,069][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,081][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,117][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,134][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,161][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,182][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,197][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,215][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,235][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,254][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,275][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,293][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,309][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,339][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,353][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,364][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,378][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,394][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,419][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,433][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,451][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,477][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,493][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,508][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,531][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,545][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,565][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,601][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,618][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,634][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,658][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,671][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,694][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,711][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,730][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,746][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,761][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,784][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,799][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,820][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,835][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,852][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,874][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,899][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,918][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,936][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,960][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,975][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:17,990][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,007][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,025][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,044][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,055][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,075][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,095][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,125][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,146][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,163][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,175][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,192][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,211][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,236][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,250][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,273][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,285][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,302][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,325][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,341][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,358][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,382][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,394][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,408][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,425][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,447][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,471][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,488][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,501][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,518][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,538][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,555][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,569][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,585][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,604][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,618][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,639][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,657][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,682][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,696][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,714][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,735][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,756][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,773][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,787][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,800][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,812][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,828][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,842][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,859][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,879][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,903][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,917][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,936][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,953][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,973][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:18,988][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,002][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,016][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,036][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,052][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,066][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,087][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,106][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,130][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,144][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,158][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,170][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,190][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,204][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,222][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,239][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,251][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,264][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,282][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,304][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,321][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,332][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,345][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,365][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,383][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,402][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,415][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,435][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,448][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,461][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,475][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,489][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,503][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,517][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,531][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,545][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,557][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,576][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,594][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,611][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,631][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,648][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,665][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,684][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,703][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,722][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,734][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,753][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,766][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,783][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,807][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,824][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,844][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,858][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,873][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,888][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,905][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,922][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,936][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,956][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,970][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:19,990][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,008][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,026][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,042][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,058][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,074][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,089][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,106][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,120][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,138][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,153][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,168][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,186][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,200][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,217][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,229][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,249][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,270][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,284][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,302][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,319][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,333][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,348][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,360][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,380][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,393][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,410][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,434][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,447][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,463][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,478][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,496][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,509][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,525][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,537][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,550][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,565][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,583][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,598][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,611][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,627][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,645][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,661][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,675][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,693][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,705][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,718][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,734][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,749][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,767][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,781][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,799][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,812][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,826][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,838][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,853][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,870][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,885][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,898][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,915][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,929][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,943][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,959][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,969][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,981][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:20,995][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,012][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,030][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,046][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,061][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,076][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,090][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,106][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,120][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,135][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,157][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,168][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,183][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,196][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,213][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,231][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,243][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,255][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,266][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,278][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,292][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,303][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,314][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,325][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,337][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,348][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,360][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,373][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,385][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,398][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,410][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,422][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,433][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,445][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,455][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,467][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,483][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,494][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,505][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,518][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,531][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,543][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,555][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,567][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,579][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,590][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,601][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,613][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,624][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,635][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,651][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,663][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,675][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,685][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,697][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,716][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,728][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,739][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,750][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,761][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,772][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,784][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,797][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,808][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,819][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,832][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,844][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,855][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,866][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,878][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,890][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,901][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,912][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,925][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,935][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,947][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,959][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,969][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,982][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:21,982][src.callbacks.data][INFO] - Saved weights for sarsa
+[2025-07-29 11:26:21,985][nle.env.base][INFO] - Not saving any NLE data.
+[2025-07-29 11:26:22,009][src.callbacks.environment][INFO] - Setup evaluation environment for cliff
+[2025-07-29 11:26:38,709][matplotlib.image][WARNING] - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [0.0..255.0].
+[2025-07-29 11:26:39,025][src.callbacks.trackers][INFO] - Generated training visualizations for sarsa
+[2025-07-29 11:26:39,025][src.callbacks.visualisation][INFO] - Setup evaluation environment for plotting
+[2025-07-29 11:26:39,036][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,045][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,052][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,061][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,070][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,078][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,086][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,094][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,104][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,112][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,120][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,129][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,138][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,146][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,155][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,163][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,173][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,181][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:39,190][src.envs.wrappers.respawn][INFO] - success
+[2025-07-29 11:26:40,231][src.callbacks.visualisation][INFO] - Generated GIF for sarsa
+[2025-07-29 11:26:40,252][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,252][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,252][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,253][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,253][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,253][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,254][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,254][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,254][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,255][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,255][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,255][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,255][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,256][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,256][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,256][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,256][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,257][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,257][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,257][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,257][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,258][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,258][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,258][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,258][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,259][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,259][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,259][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,259][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,260][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,260][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,260][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,260][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,261][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,261][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,261][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,261][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,262][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,262][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,262][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,262][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,263][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,263][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,263][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,263][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,264][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,264][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,264][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,264][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,265][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,265][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,265][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,265][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,265][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,266][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,266][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,266][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,266][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,267][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,267][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,267][src.algorithms.sarsa][INFO] - 0
+[2025-07-29 11:26:40,378][src.callbacks.visualisation][INFO] - Generated policy map for sarsa
+[2025-07-29 11:26:40,378][src.callbacks.data][INFO] - Saved csv data for sarsa
+[2025-07-29 11:26:41,648][src.callbacks.visualisation][INFO] - Generated plots for cliff
