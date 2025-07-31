@@ -115,6 +115,14 @@ a:hover {
   display: block;
 }
 
+.image-grid .caption {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: $spacer-1;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 
 .image-row {
   display: grid;
@@ -128,15 +136,6 @@ a:hover {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.note {
-  border-left: 4px solid #007acc;
-  background-color: #e7f3ff;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #004080;
 }
 
 .note {
