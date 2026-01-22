@@ -14,7 +14,7 @@ categories: projects
 <a href="https://github.com/IbrahimElk/OrwellVision">
     <img src="/assets/images/2025-05-01/panda.jpg" style="width: 50px">
 </a>
-<span class="tooltip-text"> The repository is still private, under construction </span>
+<span class="tooltip-text"> The repository is private </span>
 </span>
 
 **Notebook:** <span class="tooltip">
