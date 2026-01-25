@@ -11,7 +11,7 @@ permalink: /about
 <div style="font-size: 12px; 
             font-family: 'Courier New',
             monospace; color: #555;">
-  PGP Key fingerprint: B44A E33E 5F69 3734 ADD1 7632 7C20 8F6D E5BE 73F8
+  PGP Key fingerprint: E1F2 A234 7985 14D3 B666 7D3E 0DD2 9E15 B47E 6A40
 </div>
 
 <br>
