@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about
+categories: about
+description: about me i guess
 ---
 
 ## Personal Information
