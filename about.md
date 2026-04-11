@@ -22,7 +22,7 @@ description: about me i guess
 <a href="https://linkedin.com/in/ibrahimelk/">
   <img src="/assets/social/linkedin.png" alt="Linkedin" width="48" height="48">
 </a>
-<a href="https://bit.ly/43z6ZGK">
+<a href="secret.html">
   <img src="/assets/social/noot.jpg" alt="noot" width="48" height="48">
 </a>
 
