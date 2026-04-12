@@ -1,0 +1,334 @@
+<style>
+  #meadow {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+  #meadow svg { display: block; width: 100%; }
+
+  .prose:has(#meadow),
+  article:has(#meadow) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .prose > *:last-child,
+  article > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .sway {
+    transform-origin: center bottom;
+    animation: sway 9s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    40%       { transform: rotate(1.5deg); }
+    70%       { transform: rotate(-1deg); }
+  }
+
+  .wiggle {
+    transform-origin: center bottom;
+    animation: wiggle 8s ease-in-out infinite;
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    30%       { transform: rotate(3deg); }
+    60%       { transform: rotate(-2deg); }
+  }
+
+  .pulse {
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.03); }
+  }
+
+  .flame {
+    transform-origin: center bottom;
+    animation: flicker 0.8s ease-in-out infinite alternate;
+  }
+  .f2 { animation-duration: 0.6s; animation-delay: 0.1s; }
+  .f3 { animation-duration: 1.0s; animation-delay: 0.2s; }
+  @keyframes flicker {
+    0%   { transform: scaleX(1)   scaleY(1)   skewX(0deg); opacity: 0.85; }
+    100% { transform: scaleX(0.9) scaleY(1.1) skewX(4deg); opacity: 1; }
+  }
+
+  .gfloat.rise {
+    animation: rise 2s ease-out infinite;
+  }
+  @keyframes rise {
+    0%   { transform: translateY(0);   opacity: 0.7; }
+    100% { transform: translateY(-20px); opacity: 0; }
+  }
+
+  .swim {
+    animation: swim 3s ease-in-out infinite alternate;
+  }
+  @keyframes swim {
+    0%   { transform: translateX(-8px); }
+    100% { transform: translateX(8px); }
+  }
+
+  #ladybug {
+    position: fixed;
+    left: 10px;
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.1s;
+  }
+
+  #bee-follow {
+    position: fixed;
+    pointer-events: none;
+    z-index: 99;
+    transition: left 0.4s ease-out, top 0.4s ease-out;
+  }
+
+  #critter-tip {
+    position: fixed;
+    background: rgba(255, 245, 214, 0.95);
+    border: 1px solid #c8a86a;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 200;
+  }
+  #critter-tip.show { opacity: 1; }
+
+  #meadow svg [id$="-c"] { cursor: pointer; }
+</style>
+
+<div id="meadow">
+<svg viewBox="0 0 1600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="tosky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#fff"     stop-opacity="1"/>
+      <stop offset="8%"   stop-color="#fdf6ec"/>
+      <stop offset="20%"  stop-color="#f5e0d8"/>
+      <stop offset="45%"  stop-color="#e8cfc0"/>
+      <stop offset="100%" stop-color="#ddc4b0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#tosky)"/>
+
+  <path d="M0,380 Q200,340 400,360 Q600,330 800,350 Q1000,320 1200,355 Q1400,340 1600,365 L1600,700 L0,700 Z" fill="#c5b8d0" opacity=".6"/>
+  <g fill="#a898b8" opacity=".5">
+    <polygon points="180,370 190,330 200,370"/>
+    <polygon points="500,355 512,310 524,355"/>
+    <polygon points="850,345 862,300 874,345"/>
+    <polygon points="1100,355 1112,310 1124,355"/>
+    <polygon points="1400,360 1410,325 1420,360"/>
+  </g>
+
+  <path d="M0,440 Q250,400 500,420 Q750,395 1000,415 Q1250,400 1600,430 L1600,700 L0,700 Z" fill="#b8cca0"/>
+
+  <g class="sway">
+    <rect x="140" y="360" width="16" height="120" fill="#7a5a40"/>
+    <path d="M140,380 Q115,350 100,370 M156,375 Q175,340 190,355" stroke="#7a5a40" stroke-width="3" fill="none"/>
+    <ellipse cx="148" cy="345" rx="65" ry="55" fill="#78a860"/>
+    <ellipse cx="120" cy="365" rx="35" ry="28" fill="#78a860"/>
+    <ellipse cx="180" cy="358" rx="40" ry="30" fill="#78a860"/>
+    <ellipse cx="148" cy="320" rx="50" ry="40" fill="#8cbc6e"/>
+  </g>
+  <g class="sway" style="animation-duration:7s;animation-delay:.5s">
+    <rect x="1390" y="370" width="14" height="110" fill="#7a5a40"/>
+    <ellipse cx="1397" cy="355" rx="55" ry="48" fill="#78a860"/>
+    <ellipse cx="1425" cy="368" rx="35" ry="28" fill="#8cbc6e"/>
+  </g>
+
+  <path d="M0,480 Q300,460 600,470 Q900,458 1200,468 Q1400,462 1600,475 L1600,700 L0,700 Z" fill="#c4d8aa"/>
+  <path d="M0,510 Q400,495 800,505 Q1200,492 1600,502 L1600,700 L0,700 Z" fill="#b0c896"/>
+
+  <ellipse cx="1050" cy="580" rx="110" ry="18" fill="#a0c8d4" stroke="#88b0bc" stroke-width=".5"/>
+  <ellipse cx="1050" cy="576" rx="85"  ry="3"  fill="#fff" opacity=".2"/>
+
+  <g stroke="#7aa858" stroke-width="1.5" fill="none" opacity=".6">
+    <path d="M80,520 Q82,508 80,500 M86,520 Q88,505 86,498"/>
+    <path d="M320,515 Q322,503 320,495 M326,515 Q328,500 326,492"/>
+    <path d="M550,510 Q552,498 550,490"/>
+    <path d="M700,518 Q702,505 700,497 M706,518 Q708,502 706,494"/>
+    <path d="M950,512 Q952,500 950,492"/>
+    <path d="M1200,516 Q1202,504 1200,496 M1206,516 Q1208,501 1206,493"/>
+    <path d="M1450,520 Q1452,508 1450,500"/>
+  </g>
+
+  <g opacity=".65">
+    <circle cx="160"  cy="508" r="5"   fill="#c77dff"/><circle cx="160"  cy="508" r="2"   fill="#ffd60a"/>
+    <circle cx="440"  cy="502" r="4"   fill="#ff9bc0"/><circle cx="440"  cy="502" r="1.5" fill="#ffd60a"/>
+    <circle cx="680"  cy="512" r="4.5" fill="#c77dff"/><circle cx="680"  cy="512" r="1.8" fill="#ffd60a"/>
+    <circle cx="1280" cy="505" r="4"   fill="#ff9bc0"/><circle cx="1280" cy="505" r="1.5" fill="#ffd60a"/>
+    <circle cx="1420" cy="515" r="5"   fill="#c77dff"/><circle cx="1420" cy="515" r="2"   fill="#ffd60a"/>
+  </g>
+
+  <g transform="translate(800,530)">
+    <ellipse cx="0" cy="15" rx="120" ry="45" fill="#ffaa44" opacity=".12"/>
+    <ellipse cx="-15" cy="12" rx="40" ry="7" fill="#8b6c42"/>
+    <ellipse cx="12"  cy="10" rx="42" ry="7" fill="#a07850" transform="rotate(-15 12 10)"/>
+    <path class="flame f3" d="M-25,18 Q-35,-15 0,-65 Q35,-15 25,18 Z"  fill="#ff6b00" opacity=".85"/>
+    <path class="flame"    d="M-16,18 Q-22,-6 0,-48 Q22,-6 16,18 Z"    fill="#ffaa44"/>
+    <path class="flame f2" d="M-8,18 Q-10,2 0,-30 Q10,2 8,18 Z"        fill="#ffeedd"/>
+    <circle cx="-4" cy="-72" r="1.5" fill="#ffd60a" opacity=".7"  class="gfloat rise"/>
+    <circle cx="6"  cy="-82" r="1"   fill="#ffaa44" opacity=".5"  class="gfloat rise" style="animation-delay:.8s"/>
+    <circle cx="-8" cy="-88" r=".8"  fill="#ffd60a" opacity=".4"  class="gfloat rise" style="animation-delay:1.5s"/>
+  </g>
+
+  <g transform="translate(620,560)" id="fox-c" onclick="critterClick(event,'🦊 hmmm, warmth…')">
+    <g class="wiggle" style="animation-duration:7s">
+      <ellipse cx="-20" cy="5"   rx="22" ry="8"  fill="#c44a1a" opacity=".5"/>
+      <ellipse cx="0"   cy="0"   rx="22" ry="16" fill="#d35a25"/>
+      <circle  cx="16"  cy="-12" r="14"           fill="#d35a25"/>
+      <polygon points="8,-24 5,-34 15,-24"  fill="#d35a25"/>
+      <polygon points="22,-24 27,-34 26,-22" fill="#d35a25"/>
+      <polygon points="9,-24 6,-31 13,-24"  fill="#ffaa44"/>
+      <polygon points="23,-24 26,-31 25,-22" fill="#ffaa44"/>
+      <ellipse cx="20"  cy="-8"  rx="6"   ry="4"  fill="#fff5d6"/>
+      <circle  cx="13"  cy="-13" r="1.8"           fill="#222"/>
+      <circle  cx="21"  cy="-13" r="1.8"           fill="#222"/>
+      <circle  cx="24"  cy="-7"  r="1.3"           fill="#222"/>
+      <path d="M-20,2 Q-38,-8 -35,-22 Q-28,-14 -16,-4" fill="#d35a25"/>
+      <path d="M-35,-22 Q-37,-16 -30,-12"             fill="#fff5d6"/>
+      <line x1="22" y1="-2" x2="140" y2="-5" stroke="#7a5a40" stroke-width="2"/>
+      <circle cx="140" cy="-5" r="4" fill="#fff" stroke="#ddd" stroke-width=".5"/>
+    </g>
+  </g>
+
+  <g transform="translate(920,558)" id="rabbit-c" onclick="critterClick(event,'🐰 *munch munch*')">
+    <g class="pulse">
+      <ellipse cx="0" cy="5"   rx="18" ry="6"  fill="#8a7a60" opacity=".4"/>
+      <ellipse cx="0" cy="0"   rx="16" ry="13" fill="#c4b8a0"/>
+      <circle  cx="0" cy="-13" r="12"           fill="#c4b8a0"/>
+      <ellipse cx="-5" cy="-28" rx="3"   ry="12" fill="#c4b8a0"/>
+      <ellipse cx="5"  cy="-28" rx="3"   ry="12" fill="#c4b8a0"/>
+      <ellipse cx="-5" cy="-28" rx="1.5" ry="9"  fill="#ffb3c6"/>
+      <ellipse cx="5"  cy="-28" rx="1.5" ry="9"  fill="#ffb3c6"/>
+      <circle  cx="-4" cy="-13" r="1.6"           fill="#222"/>
+      <circle  cx="4"  cy="-13" r="1.6"           fill="#222"/>
+      <circle  cx="0"  cy="-9"  r="1"             fill="#ff6b9d"/>
+      <line x1="-3" y1="-8" x2="-12" y2="-7" stroke="#888" stroke-width=".4"/>
+      <line x1="3"  y1="-8" x2="12"  y2="-7" stroke="#888" stroke-width=".4"/>
+      <circle cx="15" cy="5" r="5" fill="#fff5d6"/>
+      <line x1="-10" y1="-2" x2="-75" y2="12" stroke="#7a5a40" stroke-width="2"/>
+      <circle cx="-75" cy="12" r="4" fill="#fff" stroke="#ddd" stroke-width=".5"/>
+    </g>
+  </g>
+
+  <g transform="translate(1350,485)" id="owl-c" onclick="critterClick(event,'🦉 hoo? hoo!')">
+    <g class="pulse">
+      <rect x="-8" y="18" width="16" height="24" fill="#8b6c42"/>
+      <ellipse cx="0" cy="8"  rx="16" ry="20" fill="#8a6a48"/>
+      <circle  cx="0" cy="-8" r="14"           fill="#8a6a48"/>
+      <polygon points="-10,-18 -13,-26 -6,-19"  fill="#6a4a30"/>
+      <polygon points="10,-18 13,-26 6,-19"     fill="#6a4a30"/>
+      <ellipse cx="0" cy="-6" rx="11" ry="9" fill="#6a4a30" opacity=".4"/>
+      <circle  cx="-5" cy="-8" r="4" fill="#ffd60a"/>
+      <circle  cx="5"  cy="-8" r="4" fill="#ffd60a"/>
+      <circle  cx="-5" cy="-8" r="2" fill="#222"/>
+      <circle  cx="5"  cy="-8" r="2" fill="#222"/>
+      <circle  cx="-4.5" cy="-9" r=".6" fill="#fff"/>
+      <circle  cx="5.5"  cy="-9" r=".6" fill="#fff"/>
+      <polygon points="0,-3 -2,0 2,0" fill="#ff9500"/>
+      <path d="M-8,5 Q0,8 8,5"   fill="none" stroke="#6a4a30" stroke-width=".4" opacity=".5"/>
+      <path d="M-6,10 Q0,13 6,10" fill="none" stroke="#6a4a30" stroke-width=".4" opacity=".5"/>
+    </g>
+  </g>
+
+  <g transform="translate(280,540)" id="hedge-c" onclick="critterClick(event,'🦔 *sniff sniff*')">
+    <g class="wiggle">
+      <g fill="none" stroke="#7a5a40" stroke-width="1.5" opacity=".8">
+        <line x1="0" y1="2" x2="-8" y2="-10"/>
+        <line x1="0" y1="2" x2="-4" y2="-12"/>
+        <line x1="0" y1="2" x2="0"  y2="-13"/>
+        <line x1="0" y1="2" x2="4"  y2="-12"/>
+        <line x1="0" y1="2" x2="8"  y2="-10"/>
+      </g>
+      <ellipse cx="0"  cy="4" rx="12" ry="8" fill="#a08060"/>
+      <ellipse cx="10" cy="2" rx="6"  ry="5" fill="#c4a878"/>
+      <circle  cx="13" cy="0" r="1"          fill="#222"/>
+      <circle  cx="15" cy="3" r=".8"         fill="#222"/>
+    </g>
+  </g>
+
+  <g transform="translate(100,525)" id="mush-c" onclick="critterClick(event,'🍄 firmware goes brr')">
+    <g class="pulse">
+      <rect x="-5" y="0" width="10" height="18" fill="#fff5d6" stroke="#ddd" stroke-width=".3"/>
+      <path d="M-20,2 Q-20,-16 0,-18 Q20,-16 20,2 Z" fill="#e63946"/>
+      <circle cx="-8" cy="-8"  r="3"   fill="#fff"/>
+      <circle cx="7"  cy="-5"  r="2.5" fill="#fff"/>
+      <circle cx="2"  cy="-14" r="2"   fill="#fff"/>
+      <circle cx="-2" cy="10"  r="1"   fill="#222"/>
+      <circle cx="2"  cy="10"  r="1"   fill="#222"/>
+      <g transform="translate(22,6) scale(.6)">
+        <rect x="-4" y="0" width="8" height="14" fill="#fff5d6"/>
+        <path d="M-14,2 Q-14,-10 0,-12 Q14,-10 14,2 Z" fill="#c44a1a"/>
+        <circle cx="-5" cy="-5" r="2"   fill="#fff"/>
+        <circle cx="5"  cy="-3" r="1.5" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+
+  <g id="snail-c" onclick="critterClick(event,'🐌 slow and steady…')" style="cursor:pointer">
+    <path d="M-16,4 Q-16,-2 -6,-2 Q14,-2 16,2 L16,5 Z" fill="#a89378"/>
+    <circle cx="2" cy="-4" r="10" fill="none" stroke="#c44a1a" stroke-width="2.5"/>
+    <circle cx="2" cy="-4" r="6"  fill="none" stroke="#c44a1a" stroke-width="2"/>
+    <circle cx="2" cy="-4" r="2.5" fill="#c44a1a"/>
+    <line x1="14" y1="0"  x2="16" y2="-7" stroke="#a89378" stroke-width="1"/>
+    <line x1="16" y1="0"  x2="20" y2="-6" stroke="#a89378" stroke-width="1"/>
+    <circle cx="16" cy="-7" r="1.2" fill="#222"/>
+    <circle cx="20" cy="-6" r="1.2" fill="#222"/>
+  </g>
+
+  <g transform="translate(1060,580)" onclick="critterClick(event,'🐟 blub blub')" id="fish-c" style="cursor:pointer">
+    <g class="swim">
+      <ellipse cx="0" cy="0" rx="12" ry="5" fill="#7ab8c4" stroke="#5a98a4" stroke-width=".5"/>
+      <polygon points="-12,0 -18,-4 -18,4" fill="#5a98a4"/>
+      <circle cx="5"   cy="-1"   r="1.5" fill="#222"/>
+      <circle cx="5.5" cy="-1.3" r=".4"  fill="#fff"/>
+    </g>
+  </g>
+
+  <g fill="#a0b890" opacity=".5">
+    <circle cx="350"  cy="470" r="18"/>
+    <circle cx="370"  cy="465" r="15"/>
+    <circle cx="1220" cy="468" r="20"/>
+    <circle cx="1245" cy="462" r="16"/>
+  </g>
+
+  <text x="800" y="660" text-anchor="middle" fill="#b0a890" font-size="10" font-family="monospace" opacity=".4">~ click the creatures ~</text>
+</svg>
+</div>
+
+<div id="critter-layer"></div>
+<div id="critter-tip"></div>
+
+<svg id="ladybug" width="28" height="32" viewBox="-1.2 -1.6 2.4 3" onclick="critterClick(event,'🐞 *click click*')">
+  <ellipse cx="0" cy="0.1" rx="0.9" ry="0.7" fill="#e63946"/>
+  <line x1="0" y1="-.6" x2="0" y2=".8" stroke="#222" stroke-width=".06"/>
+  <circle cx="-.35" cy="-.15" r=".12" fill="#222"/>
+  <circle cx=".35"  cy="-.2"  r=".1"  fill="#222"/>
+  <circle cx="-.25" cy=".25"  r=".09" fill="#222"/>
+  <circle cx=".3"   cy=".3"   r=".11" fill="#222"/>
+  <circle cx="0"    cy="-.65" r=".3"  fill="#333"/>
+  <line x1="-.1" y1="-.9" x2="-.3" y2="-1.2" stroke="#333" stroke-width=".04"/>
+  <line x1=".1"  y1="-.9" x2=".3"  y2="-1.2" stroke="#333" stroke-width=".04"/>
+  <circle cx="-.3" cy="-1.2" r=".05" fill="#333"/>
+  <circle cx=".3"  cy="-1.2" r=".05" fill="#333"/>
+</svg>
+
+<svg id="bee-follow" width="30" height="24" viewBox="-1.5 -1 3 2">
+  <ellipse cx="-.5" cy="-.3" rx=".5" ry=".3" fill="#fff" opacity=".5"/>
+  <ellipse cx=".5"  cy="-.3" rx=".5" ry=".3" fill="#fff" opacity=".5"/>
+  <ellipse cx="0"   cy=".1"  rx=".7" ry=".45" fill="#ffd60a" stroke="#333" stroke-width=".05"/>
+  <rect x="-.4"  y="-.3" width=".15" height=".7" fill="#222"/>
+  <rect x=".15"  y="-.3" width=".15" height=".7" fill="#222"/>
+  <circle cx="-.85" cy=".1" r=".2" fill="#222"/>
+</svg>
+
+<script src="/assets/ts/meadow.js"></script>

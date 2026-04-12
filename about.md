@@ -29,6 +29,13 @@ description: about me i guess
 
 ## Employment History
 
+### Research Associate - DTAI group at KU Leuven
+
+- The development of [Kompyle](https://github.com/ML-KULeuven/kompyle),
+  a python library providing an interface to several d-DNNF knowledge compilers,
+  such as [D4V2](https://www.cril.univ-artois.fr/software/d4/) and from
+  [GANAK](https://www.msoos.org/2026/03/ganak-the-making-of-a-versatile-high-performance-model-counter/), but also [SDD](http://reasoning.cs.ucla.edu/sdd/).
+
 ### Student Software Engineer - KRR group at KU Leuven
 
 - The development of [IDP-Z3](https://www.idp-z3.be/) reasoning application for the
@@ -72,15 +79,15 @@ description: about me i guess
 - Played with a forked
   [MyoFInDer](https://github.com/IbrahimElk/MyoFInDer)
 - Explored the Tauri framework
-- Seperated the GUI from the Python backend
-- Tried to reduce program's storage footprint on the client side
+- Separated the GUI from the Python backend
+- Tried to reduce the program's storage footprint on the client side
 
 <br>
 
 ## Skills
 
 - **Preferred Programming Languages:** Python, C++/C, TypeScript
-- **Prefered Env:**
+- **Preferred Env:**
   Git, Vim, Tmux, Zsh, Kitty, Hyperland, <a href="https://github.com/IbrahimElk/dotfiles/">Arch</a>, Docker
 
   ![languages](/assets/social/languages.svg)
@@ -89,38 +96,14 @@ description: about me i guess
 
 ## Education
 
-- **Master of Computer Science:** Ku Leuven Universiteit, 2025
-- **Bachelor of Computer Science:** Ku Leuven Universiteit, 2023
-- **Languages:** English (fluent), Dutch (fluent), French (mediocre)
+- **Master of Computer Science:** KU Leuven, 2025
+- **Bachelor of Computer Science:** KU Leuven, 2023
+- **Languages:** English (C1), Dutch (C2), French (B1)
 
-<div id="shape">
-  <style>
-    .hidden {
-    }
-    #output2 {
-      background: #fff;
-      overflow-x: overflow;
-      transform: translateX(-20%);
-      overflow-y: overflow;
-      height: 100vh;
-    }
-    #output2 pre {
-      border-left: none;
-      overflow: visible;
-    }
-  </style>
-  <div id="output2">
-    <!-- ASCII art will be inserted here -->
-  </div>
-  <script type="module">
-    import { fileNames, loadFileConcurrently, play } from '/assets/ts/easter_egg.js';
-    async function main() {
-      const fileName = fileNames[1];
-      const content = await loadFileConcurrently(fileName);
-      if (content != undefined) {
-        await play(content, "output2");
-      }
-    }
-    main();
-  </script>
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% include meadow.html %}
