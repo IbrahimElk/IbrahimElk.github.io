@@ -1,38 +1,15 @@
-/**
-  * Reset some basic elements
-*/
+// ============================================================
+// Base — element-level styles
+// ============================================================
 
-* {
- box-sizing: border-box !important;
- margin: 0; }
-
-input,
-select,
-textarea,
-button {
- font-family: inherit;
- font-size: inherit;
- line-height: inherit;
-}
-
-
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-/**
- * Basic styling
- */
 body {
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: 1.5;
-    color: $color-body-text;
-    background-color: $color-background;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 1.5;
+  color: $color-body-text;
+  background-color: $color-background;
+
+  @media (max-width: 640px) { font-size: 15px; }
 }
 
 p {
@@ -57,137 +34,9 @@ a {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid currentColor;
-}
 
-a:hover {
-  color: $color-primary-link;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-}
-
-// HIGHLIGHTING FOR DEMO 
-.tooltip {
-    position: relative;
-    cursor: pointer;
-}
-
-.tooltip .tooltip-text {
-    visibility: hidden;
-    background-color: $burgundy; 
-    color: $white;
-    width: 50vw;
-    text-align: center;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    margin-left: -200px;
-    bottom: 150%;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 0.6em;
-}
-
-.tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
-
-// GRAY BOXES FOR KEYWORDS
-.keyword {
-    background-color: $gray-light;
-    color: $black;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.8em;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: $spacer-2;
-  max-width: 100%;
-  margin: $spacer-3 auto;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-grid .caption {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-top: $spacer-1;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-
-.image-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: $spacer-2;
-  max-width: 100%;
-  margin: $spacer-3 auto;
-}
-
-.image-row img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.note {
-  border-left: 4px solid #007acc;
-  background-color: #e7f3ff;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #004080;
-}
-
-.warning {
-  border-left: 4px solid #ff9800;
-  background-color: #fff8e1;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #8a6d3b;
-}
-
-.danger {
-  border-left: 4px solid #f44336;
-  background-color: #fdecea;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #a94442;
-}
-
-.success {
-  border-left: 4px solid #4caf50;
-  background-color: #e8f5e9;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #2e7d32;
-}
-
-.info {
-  border-left: 4px solid #2196f3;
-  background-color: #e3f2fd;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #0c5460;
-}
-
-.tip {
-  border-left: 4px solid #3ddc84;
-  background-color: #e6ffed;
-  padding: 10px 15px;
-  margin: 10px 0;
-  font-style: italic;
-  color: #1e4620;
+  &:hover {
+    color: $color-primary-link;
+    border-bottom-style: dotted;
+  }
 }
