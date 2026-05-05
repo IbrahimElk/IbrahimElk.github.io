@@ -1,0 +1,9 @@
+<div class="collapsible">
+  <button class="collapsible-trigger" onclick="toggleCollapse(this)">
+    <span>{{ include.summary }}</span>
+    <span class="caret">▼</span>
+  </button>
+  <div class="collapsible-body">
+    {{ include.content | markdownify }}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="gs-header">
+  <span class="kicker">{{ include.kicker | default: page.kicker }}</span>
+  <div class="subtitle">{{ include.subtitle | default: page.subtitle }}</div>
+  <div class="meta">
+    <span>{{ include.author | default: page.author }}</span>
+    {% assign _tags = include.tags | default: page.meta_tags %}
+    {% for tag in _tags %}
+    <span class="meta-tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+</div>
