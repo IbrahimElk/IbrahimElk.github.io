@@ -1,0 +1,40 @@
+<svg width="100%" viewBox="0 0 690 180" role="img" xmlns="http://www.w3.org/2000/svg" style="margin:1rem 0">
+  <title>Attention output projection + residual + layer norm</title>
+  <defs>
+    <marker id="a8b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a8r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="6" y="52" width="52" height="36" rx="7" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+  <text x="32" y="67" text-anchor="middle" style="font-size:11px;font-weight:700;font-style:italic;fill:#993C1D">h₀</text>
+  <text x="32" y="81" text-anchor="middle" style="font-size:8px;fill:#993C1D">[1,s,768]</text>
+  <circle cx="32" cy="88" r="3.5" fill="#D85A30"/>
+  <line x1="59" y1="70" x2="102" y2="70" stroke="#aaa" stroke-width="1" stroke-dasharray="3 2"/>
+  <rect x="104" y="50" width="86" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="147" y="69" text-anchor="middle" style="font-size:10px;fill:#0C447C">12 heads</text>
+  <text x="147" y="82" text-anchor="middle" style="font-size:9px;fill:#185FA5">[1,12,s,64]</text>
+  <line x1="190" y1="70" x2="208" y2="70" stroke="#185FA5" stroke-width="1.2" marker-end="url(#a8b)"/>
+  <rect x="210" y="50" width="80" height="40" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="250" y="68" text-anchor="middle" style="font-size:10px;fill:#0C447C">Reshape</text>
+  <text x="250" y="82" text-anchor="middle" style="font-size:9.5px;fill:#185FA5">+Transpose</text>
+  <line x1="290" y1="70" x2="306" y2="70" stroke="#185FA5" stroke-width="1.2" marker-end="url(#a8b)"/>
+  <rect x="308" y="50" width="82" height="40" rx="8" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+  <text x="349" y="68" text-anchor="middle" style="font-size:11px;font-weight:500;fill:#fff">MatMul</text>
+  <text x="349" y="81" text-anchor="middle" style="font-size:8px;fill:#B5D4F4">W<tspan baseline-shift="sub" font-size="10">o</tspan> [768×768]</text>
+  <line x1="390" y1="70" x2="408" y2="70" stroke="#D85A30" stroke-width="1.5" marker-end="url(#a8r)"/>
+  <rect x="410" y="52" width="44" height="36" rx="8" fill="#D85A30" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="432" y="76" text-anchor="middle" style="font-size:18px;font-weight:300;fill:#fff">+</text>
+  <path d="M32 92 L32 136 Q32 141 37 141 L428 141 Q433 141 433 136 L433 90" fill="none" stroke="#D85A30" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#a8r)"/>
+  <text x="228" y="156" text-anchor="middle" style="font-size:9.5px;fill:#993C1D"> residual skip from h₀</text>
+  <line x1="454" y1="70" x2="480" y2="70" stroke="#D85A30" stroke-width="1.5" marker-end="url(#a8r)"/>
+  <rect x="482" y="50" width="54" height="40" rx="8" fill="#F6D7C8" stroke="#D85A30" stroke-width="0.5"/>
+  <text x="509" y="68" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#993C1D">LN</text>
+  <text x="509" y="82" text-anchor="middle" style="font-size:8px;fill:#993C1D">LayerNorm</text>
+  <line x1="536" y1="70" x2="556" y2="70" stroke="#D85A30" stroke-width="1.5" marker-end="url(#a8r)"/>
+  <rect x="558" y="50" width="126" height="40" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text x="621" y="68" text-anchor="middle" style="font-size:11px;font-weight:500;fill:#4A1B0C">h after attn</text>
+  <text x="621" y="82" text-anchor="middle" style="font-size:9px;fill:#993C1D">[1, seq_len, 768]</text>
+</svg>

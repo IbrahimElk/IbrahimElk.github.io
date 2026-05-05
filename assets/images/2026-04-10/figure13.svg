@@ -1,0 +1,26 @@
+<svg width="100%" viewBox="0 0 640 140" role="img" xmlns="http://www.w3.org/2000/svg" style="margin:1rem 0">
+  <title>Output: logits → next-token probabilities</title>
+  <defs>
+    <marker id="a13a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="a13c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect x="10" y="40" width="150" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+  <text x="85" y="64" text-anchor="middle" style="font-size:13px;font-weight:500;fill:#0C447C">logits</text>
+  <text x="85" y="80" text-anchor="middle" style="font-size:10px;fill:#185FA5">[1, seq_len, 50257]</text>
+  <line x1="162" y1="70" x2="210" y2="70" stroke="#185FA5" stroke-width="1.5" marker-end="url(#a13a)"/>
+  <rect x="212" y="50" width="96" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="260" y="70" text-anchor="middle" style="font-size:11px;fill:#2C2C2A">last position</text>
+  <text x="260" y="83" text-anchor="middle" style="font-size:9px;fill:#5F5E5A">[50257] logits</text>
+  <line x1="310" y1="70" x2="358" y2="70" stroke="#D4537E" stroke-width="1.5" marker-end="url(#a13c)"/>
+  <rect x="360" y="48" width="80" height="44" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="400" y="74" text-anchor="middle" style="font-size:12px;font-weight:500;fill:#4B1528">Softmax</text>
+  <line x1="442" y1="70" x2="490" y2="70" stroke="#D4537E" stroke-width="1.5" marker-end="url(#a13c)"/>
+  <rect x="492" y="40" width="84" height="16" rx="3" fill="#F4C0D1" stroke="#D4537E" stroke-width="0.3"/>
+  <text x="580" y="52" style="font-size:9px;fill:#4B1528">sat 42%</text>
+  <rect x="492" y="62" width="36" height="16" rx="3" fill="#F4C0D1" stroke="#D4537E" stroke-width="0.3"/>
+  <text x="532" y="74" style="font-size:9px;fill:#4B1528">on 18%</text>
+  <rect x="492" y="84" width="24" height="16" rx="3" fill="#F4C0D1" stroke="#D4537E" stroke-width="0.3"/>
+  <text x="520" y="96" style="font-size:9px;fill:#4B1528">down 12%</text>
+  <rect x="492" y="106" width="16" height="16" rx="3" fill="#F4C0D1" stroke="#D4537E" stroke-width="0.3"/>
+  <text x="512" y="118" style="font-size:9px;fill:#4B1528">up 8%</text>
+</svg>
